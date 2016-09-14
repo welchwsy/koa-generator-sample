@@ -11,6 +11,48 @@ const logger = require('koa-logger');
 
 const index = require('./routes/index');
 const users = require('./routes/users');
+
+// var Sequelize = require('sequelize');
+// var sequelize = new Sequelize('TestDataBase', 'postgres', '779361906', {
+//   host: 'localhost',
+//   dialect: 'postgres',
+//   port: 5432,
+//   pool: {
+//     max: 5,
+//     min: 0,
+//     idle: 10000
+//   }
+// });
+// sequelize
+//   .authenticate()
+//   .then(function(err) {
+//     console.info('Connection has been established successfully.');
+//   })
+//   .catch(function (err) {
+//     console.warn('Unable to connect to the database:', err);
+//   });
+
+// var User = sequelize.define('user', {
+//   firstName: {
+//     type: Sequelize.STRING
+//   },
+//   lastName: {
+//     type: Sequelize.STRING
+//   }
+// });
+// // force: true will drop the table if it already exists
+// User.sync({force: false}).then(function () {
+//   // Table created
+//   return User.create({
+//     firstName: 'John',
+//     lastName: 'Hancock'
+//   });
+// });
+
+// User.findOne().then(function(users) {
+//   console.log(users.dataValues)
+// })
+
 // onerror
 onerror(app);
 

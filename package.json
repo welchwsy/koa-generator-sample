@@ -20,8 +20,11 @@
     "koa-router": "^7.0.1",
     "koa-static": "^3.0.0",
     "koa-views": "^5.1.2",
+    "pg": "^6.1.0",
+    "pg-hstore": "^2.3.2",
     "pug": "^0.1.0",
-    "runkoa": "^1.5.2"
+    "runkoa": "^1.5.2",
+    "sequelize": "^3.24.3"
   },
   "devDependencies": {
     "nodemon": "^1.8.1"
